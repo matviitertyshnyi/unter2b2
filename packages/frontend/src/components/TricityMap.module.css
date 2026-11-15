@@ -1,0 +1,111 @@
+.mapCard {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-line);
+  border-radius: var(--radius-card);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.mapEmbedded {
+  box-shadow: none;
+  padding: 14px 16px;
+  border-radius: var(--radius-well);
+}
+
+.mapHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.pinControls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pinModeBtn {
+  min-height: 32px;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-strong);
+  background: var(--bg-well);
+  color: var(--ink-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: border-color 140ms var(--ease-ui), background-color 140ms var(--ease-ui), color 140ms var(--ease-ui);
+}
+
+.pinModeBtn:hover {
+  border-color: var(--accent-blue);
+  color: var(--ink-primary);
+}
+
+.pinModePickupActive,
+.pinModeBtn.pinModePickupActive:hover {
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+  color: #ffffff;
+}
+
+.pinModeDropoffActive,
+.pinModeBtn.pinModeDropoffActive:hover {
+  background: var(--accent-emerald);
+  border-color: var(--accent-emerald);
+  color: #ffffff;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 12px;
+  color: var(--ink-secondary);
+}
+
+.legendDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.svgWrap {
+  background: var(--bg-well);
+  border: 1px solid var(--border-line);
+  border-radius: var(--radius-well);
+  overflow: hidden;
+  position: relative;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mapHint {
+  margin: 0;
+  font-size: 12px;
+  color: var(--ink-muted);
+}

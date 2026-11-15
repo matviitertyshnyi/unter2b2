@@ -1,0 +1,21 @@
+{
+  "name": "unter-b2b-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unter b2b - Crowd-sourced B2B micro-freight MVP connecting local businesses with couriers' unused trunk capacity.",
+  "workspaces": [
+    "packages/backend",
+    "packages/frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently -n API,WEB -c blue,green \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "npm --workspace=packages/backend run dev",
+    "dev:frontend": "npm --workspace=packages/frontend run dev",
+    "build": "npm --workspace=packages/backend run build && npm --workspace=packages/frontend run build",
+    "test": "npm --workspace=packages/backend run test && npm --workspace=packages/frontend run typecheck",
+    "start": "npm --workspace=packages/backend run start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

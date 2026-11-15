@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Builds & Dist
+dist/
+**/dist/
+build/
+**/build/
+*.tsbuildinfo
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# SQLite / Local Database
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+packages/backend/data/*.db*
+packages/backend/data/*.sqlite*
+
+# Logs & OS files
+logs/
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Editor & Local Agent Scratch
+.vscode/
+!.vscode/extensions.json
+.impeccable/mocks/
+.impeccable/review/
