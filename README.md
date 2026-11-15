@@ -6,7 +6,7 @@
 
 ![Unter b2b Demo](./docs/demo.mp4) 
 
-!Link to a demo: https://drive.google.com/file/d/1hTFI-NMLmSaZKpL7u2MouFkJNhpuM9eA/view?usp=drive_link
+![Link to a demo:] https://drive.google.com/file/d/1hTFI-NMLmSaZKpL7u2MouFkJNhpuM9eA/view?usp=drive_link
 
 ---
 
